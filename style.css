@@ -48,12 +48,10 @@ html {
 }
 
 .bg h1 {
-    padding: 0;
-    display: block;
-    text-align: center;
-    color: #8EE4AF;
-    text-shadow: 2px 2px #445423;
+    color: #689775;
+    text-shadow: #161616;
 }
+
 
 .centered {
     position: absolute;
@@ -67,39 +65,6 @@ nav {
     width: 100%;
     margin: 0;
     line-height: 2;
-}
-
-.right-nav {
-    right: 0;
-    top: 50%;
-    margin-top: -165px;
-    margin-right: 10px;
-    width: 100px;
-    position: fixed;
-    background-color: #111;
-    overflow-x: hidden;
-    border-radius: 25px;
-}
-
-nav ul {
-    background-color: #eee;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-ul.right-nav li {
-    list-style: none;
-    text-align: right;
-}
-
-ul.right-nav li a {
-    padding: 8px 8px 8px 8px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    text-align: center;
 }
 
 ul.right-nav li a:hover {
@@ -125,6 +90,224 @@ ul.right-nav li a.Projects:hover {
 ul.right-nav li a.Contact:hover {
     background-color: #AD8174;
     color: #fff;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .right-nav {
+        right: 0;
+        top: 0%;
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 100px;
+        position: fixed;
+        background-color: #111;
+        overflow-x: hidden;
+        border-radius: 25px;
+    }
+
+    nav ul {
+        background-color: #eee;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.right-nav li {
+        list-style: none;
+        text-align: right;
+    }
+
+    ul.right-nav li a {
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        text-align: center;
+    }
+
+    .bg.container {
+        font-size: 200%;
+    }
+
+    .right-nav li:not(:nth-child(1)) {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .right-nav {
+        right: 0;
+        top: 0%;
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 100px;
+        position: fixed;
+        background-color: #111;
+        overflow-x: hidden;
+        border-radius: 25px;
+    }
+
+    nav ul {
+        background-color: #eee;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.right-nav li {
+        list-style: none;
+        text-align: right;
+    }
+
+    ul.right-nav li a {
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        text-align: center;
+    }
+
+    .bg.container {
+        font-size: 225%;
+    }
+
+    .right-nav li:not(:nth-child(1)) {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .right-nav {
+        right: 0;
+        top: 50%;
+        margin-top: -165px;
+        margin-right: 10px;
+        width: 100px;
+        position: fixed;
+        background-color: #111;
+        overflow-x: hidden;
+        border-radius: 25px;
+    }
+
+    nav ul {
+        background-color: #eee;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.right-nav li {
+        list-style: none;
+        text-align: right;
+    }
+
+    ul.right-nav li a {
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        text-align: center;
+    }
+
+    .bg.container {
+        font-size: 250%;
+    }
+
+    .right-nav li:nth-child(1) {
+        display: none;
+    }
+
+    .right-nav li:not(:nth-child(1)) {
+        display: block;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .right-nav {
+        right: 0;
+        top: 50%;
+        margin-top: -165px;
+        margin-right: 10px;
+        width: 100px;
+        position: fixed;
+        background-color: #111;
+        overflow-x: hidden;
+        border-radius: 25px;
+    }
+
+    nav ul {
+        background-color: #eee;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.right-nav li {
+        list-style: none;
+        text-align: right;
+    }
+
+    ul.right-nav li a {
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        text-align: center;
+    }
+
+    .bg.container {
+        font-size: 275%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .right-nav {
+        right: 0;
+        top: 50%;
+        margin-top: -165px;
+        margin-right: 10px;
+        width: 100px;
+        position: fixed;
+        background-color: #111;
+        overflow-x: hidden;
+        border-radius: 25px;
+    }
+
+    nav ul {
+        background-color: #eee;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.right-nav li {
+        list-style: none;
+        text-align: right;
+    }
+
+    ul.right-nav li a {
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        text-align: center;
+    }
+
+    .bg.container {
+        font-size: 300%;
+    }
 }
 
 /* Rows and columns*/
@@ -191,6 +374,7 @@ ul.right-nav li a.Contact:hover {
     box-sizing: border-box;
 }
 
+/* helps for visualising */
 [class*="col-"] {
     border: 2px solid red;
     padding: 15px;
