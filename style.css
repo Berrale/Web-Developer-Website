@@ -92,6 +92,20 @@ ul.right-nav li a.Contact:hover {
     color: #fff;
 }
 
+ul.right-nav.responsive {
+    position: absolute;
+}
+
+ul.right-nav.responsive li {
+    display: inline;
+    float: none;
+}
+
+ul.right-nav.responsive li a {
+    display: block;
+    text-align: center;
+}
+
 /* Media Queries */
 
 /* Extra small devices (phones, 600px and down) */
@@ -227,6 +241,10 @@ ul.right-nav li a.Contact:hover {
 
     .right-nav li:not(:nth-child(1)) {
         display: block;
+    }
+
+    ul.right-nav.responsive li:nth-child(1) {
+        display: none;
     }
 }
 
