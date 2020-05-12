@@ -10,6 +10,15 @@ Black: 161616
 
 Dark Beige: 917164
 light Beige: AD8174
+
+
+***************** NEW COLOUR SCHEME FOR REFACTORING ***********************
+
+Black: 011627
+White: fdfffc
+Blue: 2ec4b6
+Red: e71d36
+Yellow: ff9f1c
 */
 
 
@@ -23,6 +32,7 @@ footer {
 body {
     line-height: 1;
     margin: 0;
+    background-color: #161616;
 }
 
 body,
@@ -30,14 +40,17 @@ html {
     height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Background Image */
 .bg {
-    background-image: url(Images/Background.png);
+    background-image: url(Images/Blue_n_Red.png);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.75;
 }
 
 .bg.container {
@@ -60,6 +73,16 @@ html {
     transform: translate(-50%, -50%);
 }
 
+/* Container */
+
+.about.container {
+    background-image: url(Images/Background.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Nav bar */
 nav {
     width: 100%;
@@ -68,28 +91,8 @@ nav {
 }
 
 ul.right-nav li a:hover {
-    background-color: #917164;
-    color: #fff;
-}
-
-ul.right-nav li a.Home:hover {
-    background-color: #C7493A;
-    color: #fff;
-}
-
-ul.right-nav li a.About:hover {
-    background-color: #689775;
-    color: #fff;
-}
-
-ul.right-nav li a.Projects:hover {
-    background-color: #7395AE;
-    color: #fff;
-}
-
-ul.right-nav li a.Contact:hover {
-    background-color: #AD8174;
-    color: #fff;
+    background-color: #ff9f1c;
+    color: #011627;
 }
 
 ul.right-nav.responsive {
@@ -105,6 +108,60 @@ ul.right-nav.responsive li a {
     display: block;
     text-align: center;
 }
+
+ul li hr {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #011627;
+}
+
+.moveOn {
+    width: 90px;
+    height: 90px;
+    opacity: 0.6;
+    margin: 0;
+    background-color: #011627;
+    right: 47%;
+    top: 90%;
+    position: absolute;
+    border-radius: 100px;
+}
+
+.moveOn a {
+    text-decoration: none;
+}
+
+.moveOn h1 {
+    color: #fdfffc;
+    text-align: center;
+}
+
+.moveOn:hover {
+    opacity: 0.8;
+}
+
+/* Divider */
+.divider {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* About Section*/
+.about.container {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.aboutBox {
+    background-color: #ff9f1c;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.aboutBox.selfImage {}
 
 /* Media Queries */
 
@@ -138,9 +195,15 @@ ul.right-nav.responsive li a {
         padding: 8px 8px 8px 8px;
         text-decoration: none;
         font-size: 25px;
-        color: #818181;
+        background-color: #011627;
+        color: #fdfffc;
         display: block;
         text-align: center;
+    }
+
+    .bg.container {
+        width: 100%;
+        height: 100%;
     }
 
     .bg.container {
@@ -182,7 +245,8 @@ ul.right-nav.responsive li a {
         padding: 8px 8px 8px 8px;
         text-decoration: none;
         font-size: 25px;
-        color: #818181;
+        background-color: #011627;
+        color: #fdfffc;
         display: block;
         text-align: center;
     }
@@ -226,7 +290,8 @@ ul.right-nav.responsive li a {
         padding: 8px 8px 8px 8px;
         text-decoration: none;
         font-size: 25px;
-        color: #818181;
+        background-color: #011627;
+        color: #fdfffc;
         display: block;
         text-align: center;
     }
@@ -278,7 +343,8 @@ ul.right-nav.responsive li a {
         padding: 8px 8px 8px 8px;
         text-decoration: none;
         font-size: 25px;
-        color: #818181;
+        background-color: #011627;
+        color: #fdfffc;
         display: block;
         text-align: center;
     }
@@ -318,7 +384,8 @@ ul.right-nav.responsive li a {
         padding: 8px 8px 8px 8px;
         text-decoration: none;
         font-size: 25px;
-        color: #818181;
+        background-color: #011627;
+        color: #fdfffc;
         display: block;
         text-align: center;
     }
@@ -390,10 +457,4 @@ ul.right-nav.responsive li a {
 
 * {
     box-sizing: border-box;
-}
-
-/* helps for visualising */
-[class*="col-"] {
-    border: 2px solid red;
-    padding: 15px;
 }
