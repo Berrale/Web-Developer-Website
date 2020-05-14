@@ -1,0 +1,472 @@
+/* Colours:
+Light Orange: C7493A
+Red: A33327
+
+Green: 689775
+
+Blue: 7395AE
+
+Black: 161616
+
+Dark Beige: 917164
+light Beige: AD8174
+
+
+***************** NEW COLOUR SCHEME FOR REFACTORING ***********************
+
+Black: 02040F
+White: E5DADA
+Blue: 92D5FF
+Red: 840032
+Yellow: E59500
+*/
+
+
+/* Defaults */
+nav,
+header,
+footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+    background-color: #161616;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Background Image */
+.bg {
+    background-image: url(/Images/HomeImage.png);
+    background-color: 02040F;
+    height: 880px;
+    width: 1720px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg.container {
+    position: relative;
+    text-align: center;
+    opacity: 1;
+    font-size: 300%;
+}
+
+.Logo img {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -20px;
+
+}
+
+.bg h1 {
+    color: #689775;
+    text-shadow: #161616;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Nav bar */
+nav {
+    width: 100%;
+    margin: 0;
+    line-height: 2;
+}
+
+.right-nav {
+    right: 0;
+    top: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100px;
+    position: fixed;
+    overflow-x: hidden;
+    border-radius: 25px;
+    list-style: none;
+    transform: translate(-50%, -50%);
+}
+
+
+.Home {
+    width: 40px;
+    height: 40px;
+    background-color: #E5DADA;
+    border-radius: 100px;
+    transition: 0.2s;
+}
+
+.Home:hover {
+    background-color: #E59500;
+    border-radius: 0px;
+    transition: 0.2s;
+
+}
+
+.About {
+    width: 40px;
+    height: 40px;
+    background-color: #E5DADA;
+    border-radius: 100px;
+    transition: 0.2s;
+}
+
+
+.About:hover {
+    background-color: #E59500;
+    border-radius: 0px;
+    transition: 0.2s;
+
+}
+
+.Projects {
+    width: 40px;
+    height: 40px;
+    background-color: #E5DADA;
+    border-radius: 100px;
+    transition: 0.2s;
+}
+
+
+
+.Projects:hover {
+    background-color: #E59500;
+    border-radius: 0px;
+    transition: 0.2s;
+
+}
+
+.Contact {
+    width: 40px;
+    height: 40px;
+    background-color: #E5DADA;
+    border-radius: 100px;
+    transition: 0.2s;
+}
+
+.Contact:hover {
+    background-color: #E59500;
+    border-radius: 0px;
+    transition: 0.2s;
+
+}
+
+.Change {
+    background-color: #E59500;
+}
+
+ul.right-nav li {
+    margin-top: 15px;
+}
+
+ul.right-nav li a:hover {
+    background-color: #ff9f1c;
+    color: #011627;
+}
+
+ul.right-nav.responsive {
+    position: absolute;
+}
+
+ul.right-nav.responsive li {
+    display: inline;
+    float: none;
+}
+
+ul.right-nav.responsive li a {
+    display: block;
+    text-align: center;
+}
+
+.moveOn {
+    width: 90px;
+    height: 90px;
+    opacity: 0.6;
+    margin: 0;
+    background-color: #011627;
+    right: 47%;
+    top: 90%;
+    position: absolute;
+    border-radius: 100px;
+}
+
+.moveOn a {
+    text-decoration: none;
+}
+
+.moveOn h1 {
+    color: #fdfffc;
+    text-align: center;
+}
+
+.moveOn:hover {
+    opacity: 0.8;
+}
+
+/* Divider */
+.divider {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* About Section*/
+.about.container {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.aboutBox {
+    background-color: #ff9f1c;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.aboutBox .selfImage {
+    align-content: center;
+    background-color: #fdfffc;
+    margin-top: 150px;
+    margin-right: 10px;
+    width: 500px;
+    height: 500px;
+    border-radius: 500px;
+}
+
+.textBox {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #011627;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.textBox h2 {
+    color: #fdfffc;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+.textBox p {
+    color: #fdfffc;
+    text-align: left;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .bg {
+        height: 237.5px;
+        width: 500px;
+        margin-top: 60%;
+        margin-bottom: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .Logo img {
+        margin-top: -55%;
+        margin-left: 5%;
+        width: 45px;
+        height: 45px;
+
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .bg {
+        height: 332px;
+        width: 668px;
+        margin-top: 50%;
+        margin-bottom: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .Logo img {
+        margin-top: -45%;
+        margin-left: 5%;
+        width: 45px;
+        height: 45px;
+
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .bg {
+        height: 458px;
+        width: 892px;
+        margin-top: 30%;
+        margin-bottom: 70%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .Logo img {
+        margin-top: -25%;
+        margin-left: 5%;
+        width: 45px;
+        height: 45px;
+
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .bg {
+        height: 458px;
+        width: 892px;
+        margin-top: 20%;
+        margin-bottom: 50%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .Logo img {
+        margin-top: -18%;
+        margin-left: 2%;
+        width: 45px;
+        height: 45px;
+
+    }
+
+    nav {
+        display: block;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .bg {
+        height: 95%;
+        width: 95%;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .Logo img {
+        width: 45px;
+        height: 45px;
+        margin-left: 20px;
+        margin-top: -20px;
+
+    }
+
+    nav {
+        display: block;
+    }
+}
+
+/* Rows and columns*/
+.row {
+    display: flex;
+    width: 100%
+}
+
+.row::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
